@@ -1,0 +1,5 @@
+#Start Elastic Search
+cd elasticsearch-6.6.1/bin
+./elasticsearch
+
+http://127.0.0.1:9200/
