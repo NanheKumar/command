@@ -6,3 +6,20 @@ hostnamectl
 Type the following command to find Linux kernel version:
 uname -r
 
+change time zone in debian
+
+
+timedatectl
+
+ls -l /etc/localtime
+
+timedatectl list-timezones
+
+
+
+sudo timedatectl set-timezone Asia/Kolkata
+
+sudo rm -f /etc/localtime
+
+sudo ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+
