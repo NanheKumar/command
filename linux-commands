@@ -23,3 +23,19 @@ sudo rm -f /etc/localtime
 
 sudo ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 
+#check free and used space ubuntu
+df -h
+df -h --total
+
+Ram infomation
+Run the following command to see RAM information in KiB (1 Kibibyte is 1024 bytes).
+
+free
+
+Run the following command to see RAM information in MiB (1 Mebibyte is 1,048,576 bytes).
+
+free -m
+
+Run the following command to see RAM information in GiB (1 Gibibyte is 1,073,741,824 bytes).
+
+free -g
