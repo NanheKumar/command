@@ -23,3 +23,7 @@ sudo nano /etc/nginx/nginx.conf
 sudo systemctl reload nginx.service
 
 /var/log/nginx/error.log
+
+
+Restart redis on ubunutu
+/etc/init.d/redis-server restart
