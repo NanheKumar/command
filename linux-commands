@@ -23,6 +23,12 @@ sudo rm -f /etc/localtime
 
 sudo ln -s /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
 
+Mysql Timezone change
+SELECT @@global.time_zone, @@session.time_zone;
+SET GLOBAL time_zone = '+5:30';
+select now();
+
+
 #check free and used space ubuntu
 df -h
 df -h --total
