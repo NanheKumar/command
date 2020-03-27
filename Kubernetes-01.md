@@ -3,11 +3,17 @@ https://www.youtube.com/watch?v=kDGRqNUhNnA
 Go to home directory (Open your terminal 1. pwd 2. pwd)
 
 ls .kube
+
 cat .kube/config 
+
 kubectl config view
+
 kubectl config view --minify=true
+
 kubectl config get-contexts
+
 kubectl config use-context minikube
+
 kubectl cluster-info
 kubectl config get-clusters
 kubectl get cs
