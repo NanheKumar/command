@@ -1,0 +1,116 @@
+
+docker rm $(docker ps -aq)
+
+docker pull php:7.3-apache
+
+docker pull mysql:5.6
+
+
+docker images | grep mysql
+
+docker run -d -p 3306:3306 -e  mysql:5.6
+
+docker ps -a 
+
+docker logs youthful_allen
+
+docker logs -f youthful_allen
+
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="jack2009" mysql:5.6
+
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="jack2009" mysql:5.6
+
+
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="jack2009" mysql:5.6 -v /tmp/mysql-data:/var/lib/mysql:5.6
+
+mysql -uroot -h localhost -p (Fail) 
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
+
+
+mysql -h 127.0.0.1  -u root -p
+
+
+
+
+netstat -ap tcp | grep -i "listen"
+
+sudo lsof -PiTCP -sTCP:LISTEN
+
+
+mysql -h 127.0.0.1 -u root -p
+
+Login in container then login database
+
+docker exec -it youthful_allen bash
+
+unix socket
+
+ls /var/lib/mysql -l 
+
+mysql -h localhost -p
+
+docker inspect youthful_allen
+
+
+Linux command
+
+ps -aux
+
+id www-data
+
+
+
+
+
+
+docker images | grep php
+
+docker run -p 80:80 -d php:7.3-apache
+
+docker ps
+
+docker exec -it jolly_haslett bash
+
+touch index.html
+
+curl -#  -LO  https://wordpress.org/latest.tar.gz
+
+tar xzf latest.tar.gz
+
+ls -l
+
+mv wordpress/* .
+
+enable apahce2 module
+
+a2enmod
+
+list apche2 moduels
+
+apache2ctl -M
+
+on rewrite module
+a2enmod 
+rewrite
+service apache2 restart
+
+
+docker volume ls
+docker volume rm volume_name
+docker volume create mysql-data
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="jack2009" mysql:5.6 -v mysql-data:/var/lib/mysql:5.6
+
+
+docker run --rm -it container_name bash
+
+
+
+docker pull php:7.0-fpm-alpine
+
+
+docker rmi -f 31474ab759ff df71a66e2cf6 df71a66e2cf6 2e38ac32c5aa 2e38ac32c5aa 2e38ac32c5aa 1897589fc44e 1897589fc44e 1897589fc44e
+ 1c7ca9f0f6fb ffac022d2cf6 10794c75c509 741337ec9e8a 7a925d7e8366 
+
+
+
+
