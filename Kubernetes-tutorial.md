@@ -1,3 +1,69 @@
+minikube run
+minikube ip
+minikube dashboard
+minikube ssh
+minikube stop
+
+kubectl config get-clusters
+kubectl config get-contexts
+kubectl config use-context minikube
+kubectl cluster-info
+kubectl get cs
+
+cat .kube/config
+
+
+kubectl get nodes
+kubectl get nodes -o wide
+
+kubectl run nginx --image=nginx:alpine --port=80
+kubectl scale deployment nginx --replicas=2
+
+
+kubectl get deployments 
+kubectl get deployments -o wide
+kubectl delete deployment nginx
+
+kubectl get services
+kubectl get svc
+kubectl get services -o wide
+
+kubectl describe services nginx
+
+
+kubectl get pods
+kubectl get pods -o wide
+kubectl get pods -w
+
+kubectl logs POD_NAME
+
+kubectl exec -it multitool-6d598c8f8-5d5pt bash
+
+kubectl delete pods nginx-7b676545bc-4xhnq
+curl POD_IP
+
+Public Expose
+kubectl expose deployment nginx --type NodePort --port 80
+minikube ip
+192.168.64.2
+kubectl get service -o wide
+http://192.168.64.2:32187
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 https://www.youtube.com/watch?v=kDGRqNUhNnA
 
 Go to home directory (Open your terminal 1. pwd 2. pwd)
