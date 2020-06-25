@@ -233,3 +233,5 @@ kubectl delete services nginx
 
 kubectl expose deployment nginx --type NodePort --port 80
 
+kubectl get ingress
+
