@@ -239,3 +239,5 @@ https://docs.bitnami.com/tutorials/secure-kubernetes-services-with-ingress-tls-l
 
 https://cert-manager.io/docs/tutorials/acme/ingress/
 
+https://hub.helm.sh/charts/bitnami/elasticsearch
+
