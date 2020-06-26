@@ -235,3 +235,7 @@ kubectl expose deployment nginx --type NodePort --port 80
 
 kubectl get ingress
 
+https://docs.bitnami.com/tutorials/secure-kubernetes-services-with-ingress-tls-letsencrypt/
+
+https://cert-manager.io/docs/tutorials/acme/ingress/
+
