@@ -112,5 +112,5 @@ docker rmi -f 31474ab759ff df71a66e2cf6 df71a66e2cf6 2e38ac32c5aa 2e38ac32c5aa 2
  1c7ca9f0f6fb ffac022d2cf6 10794c75c509 741337ec9e8a 7a925d7e8366 
 
 
-
+docker run -d praqma/network-multitool
 
