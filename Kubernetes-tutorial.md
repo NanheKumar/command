@@ -250,5 +250,8 @@ https://hub.helm.sh/charts/bitnami/elasticsearch
 https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
 
 kubectl get hpa
+
 kubectl autoscale deployment kartify-chahak --cpu-percent=70 --min=4 --max=100
+
+kubectl autoscale deployment majorbrands-chahak --cpu-percent=70 --min=4 --max=100
 
