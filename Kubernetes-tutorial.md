@@ -255,5 +255,15 @@ kubectl autoscale deployment kartify-chahak --cpu-percent=70 --min=4 --max=100
 
 kubectl autoscale deployment majorbrands-chahak --cpu-percent=70 --min=4 --max=100
 
-kubectl scale deployment kartify-chahak-elasticsearch-elasticsearch-coordinating-only --replicas=10
+kubectl scale deployment kartify-chahak-elasticsearch-elasticsearch-coordinating-only --replicas=4
+
+kubectl get statefulsets kartify-chahak-elasticsearch-elasticsearch-data
+
+kubectl scale statefulsets kartify-chahak-elasticsearch-elasticsearch-data --replicas=4
+
+kubectl get statefulsets kartify-chahak-elasticsearch-elasticsearch-master
+
+kubectl scale statefulsets kartify-chahak-elasticsearch-elasticsearch-master --replicas=4
+
+
 
