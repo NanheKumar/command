@@ -255,3 +255,5 @@ kubectl autoscale deployment kartify-chahak --cpu-percent=70 --min=4 --max=100
 
 kubectl autoscale deployment majorbrands-chahak --cpu-percent=70 --min=4 --max=100
 
+kubectl scale deployment kartify-chahak-elasticsearch-elasticsearch-coordinating-only --replicas=10
+
