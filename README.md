@@ -124,3 +124,13 @@ SET GLOBAL slow_query_log = 'OFF';
 
 df -h
 
+How to set timezone in ubuntu
+
+List timezone
+
+timedatectl
+
+Set timezone
+
+timedatectl set-timezone Asia/Kolkata
+
