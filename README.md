@@ -124,7 +124,11 @@ SET GLOBAL slow_query_log = 'OFF';
 
 df -h
 
-How to set timezone in ubuntu
+# Check Ram space
+
+free -h
+
+# How to set timezone in ubuntu
 
 List timezone
 
