@@ -124,6 +124,11 @@ SET GLOBAL slow_query_log = 'OFF';
 
 df -h
 
+sudo du -shc /*
+
+sudo du -shc /var/www/html/almamaterstore/tshirtecommerce/*
+
+
 # Check Ram space
 
 free -h
