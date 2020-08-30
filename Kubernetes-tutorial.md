@@ -234,12 +234,23 @@ kubectl delete services nginx
 kubectl expose deployment nginx --type NodePort --port 80
 
 kubectl get ingress
+
 kubectl get ClusterIssuer
+
 kubectl get certificate
 
 kubectl describe certificate quickstart-ans3-ansd-in-tls
+
+kubectl get secrets
+
+kubectl describe secrets/kartify-chahak-tls-cert  
+
+kubectl get secret kartify-chahak-tls-cert -o yaml
+
 kubectl describe secret quickstart-ans3-ansd-in-tls
+
 kubectl describe ClusterIssue letsencrypt-prod
+
 
 https://docs.bitnami.com/tutorials/secure-kubernetes-services-with-ingress-tls-letsencrypt/
 
