@@ -1,0 +1,10 @@
+
+
+Database path of files and folder
+
+/usr/local/var/mysql
+
+find my.cnf path
+
+mysql --help 
+
