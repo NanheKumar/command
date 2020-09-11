@@ -1,0 +1,8 @@
+Hos to download site ssl certficate
+
+echo | openssl s_client -servername celio.in -connect celio.in:443 |\
+  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > certificate.crt
+
+
+echo | openssl s_client -servername www.celio.in -connect www.celio.in:443 |\
+  sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > www.certificate.crt  
