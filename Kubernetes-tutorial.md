@@ -277,4 +277,14 @@ kubectl get statefulsets kartify-chahak-elasticsearch-elasticsearch-master
 kubectl scale statefulsets kartify-chahak-elasticsearch-elasticsearch-master --replicas=4
 
 
+# Change Name space
+
+
+kubectl get pods --all-namespaces
+
+kubectl get namespace
+
+kubectl config set-context --current --namespace=
+
+kubectl config set-context --current --namespace=default
 
