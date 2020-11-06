@@ -251,6 +251,13 @@ kubectl describe secret quickstart-ans3-ansd-in-tls
 
 kubectl describe ClusterIssue letsencrypt-prod
 
+kubectl describe certs >> to get all certificates 
+
+
+
+
+kubectl get challenges >> to see where are issues
+
 
 https://docs.bitnami.com/tutorials/secure-kubernetes-services-with-ingress-tls-letsencrypt/
 
