@@ -295,3 +295,6 @@ kubectl config set-context --current --namespace=
 
 kubectl config set-context --current --namespace=default
 
+
+https://docs.bitnami.com/google-templates/infrastructure/mariadb/configuration/enable-additional-nodes/
+
