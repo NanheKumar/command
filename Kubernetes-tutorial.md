@@ -298,3 +298,7 @@ kubectl config set-context --current --namespace=default
 
 https://docs.bitnami.com/google-templates/infrastructure/mariadb/configuration/enable-additional-nodes/
 
+gcloud deployment-manager deployments update bs-mariadb-cluster --config expanded-config.yaml --preview
+
+gcloud deployment-manager deployments update bs-mariadb-cluster  
+
