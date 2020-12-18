@@ -1,0 +1,27 @@
+Restore Bitname maraiadb clustter 
+
+https://cloud.google.com/compute/docs/disks/add-persistent-disk
+
+sudo lsblk
+
+sudo mount -o discard,defaults /dev/sdb /bitnami
+
+sudo chmod a+w /bitnami
+
+Start Or Stop Services
+
+sudo service bitnami status
+
+sudo service bitnami start
+
+sudo service bitnami restart apache
+
+sudo service bitnami stop
+
+sudo service bitnami restart
+
+https://docs.bitnami.com/vmware-templates/infrastructure/mariadb/administration/control-services/
+
+Repate Databases
+
+mysqlcheck -u root -p --auto-repair --check --all-databases
