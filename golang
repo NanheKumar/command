@@ -1,0 +1,23 @@
+
+check go version
+
+go version  
+
+echo $GOPATH
+
+which go
+
+/usr/local/bin/go
+
+check go path
+sudo echo $(go env GOPATH)
+
+nano ~/.zshrc
+
+export GOPATH=/Users/nanhe/go
+export PATH=$GOPATH/bin:$PATH
+
+Or
+
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$PATH
