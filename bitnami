@@ -25,3 +25,15 @@ https://docs.bitnami.com/vmware-templates/infrastructure/mariadb/administration/
 Repate Databases
 
 mysqlcheck -u root -p --auto-repair --check --all-databases
+
+
+For Chcecking Mysql is running or not.
+
+ps xufa | grep mysql
+
+sudo service bitnami restart mysql
+
+sudo service bitnami stop mysql
+
+Check Memory
+df -h
