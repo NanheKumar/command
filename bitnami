@@ -37,3 +37,21 @@ sudo service bitnami stop mysql
 
 Check Memory
 df -h
+
+
+resize_partitions
+https://cloud.google.com/compute/docs/disks/add-persistent-disk#resize_partitions
+
+sudo lsblk
+
+growpart /dev/sdb 1
+
+mkdir /secondary/
+
+sudo mount  /dev/sdb1 /secondary/
+
+df -h
+
+e2fsck -f /dev/sdb1
+
+resize2fs /dev/sdb1
