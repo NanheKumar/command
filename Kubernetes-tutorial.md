@@ -303,3 +303,20 @@ gcloud deployment-manager deployments update bs-mariadb-cluster --config expande
 
 gcloud deployment-manager deployments update bs-mariadb-cluster  
 
+
+## Trouble shooting
+
+kubectl get ClusterIssuer  
+
+kubectl describe ClusterIssuer letsencrypt-prod-issuer1
+
+kubectl get certificaterequest
+
+kubectl describe certificaterequest  kartify-chahak-tls-cert-issuer1-2068363811
+
+kubectl get order
+
+kubectl describe order kartify-chahak-tls-cert-issuer1-2068363811-1909097558
+
+kubectl get challenges
+
