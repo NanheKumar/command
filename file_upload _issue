@@ -1,0 +1,39 @@
+
+server {
+
+        listen        80;
+        root   /usr/local/var/www/ucrs;
+        index  index.html index.htm index.php;
+        server_name  ucrs.loc;
+        //Add bellow line
+        client_max_body_size 400M;
+
+        error_log  logs/ucrs.error.log;
+        access_log logs/ucrs.access.log;
+
+
+        location / {
+                try_files $uri $uri/ /index.php?$args;
+                 //Add bellow line
+                proxy_read_timeout 3600;
+        }
+
+        location ~ \.php$ {
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            include fastcgi_params;
+            fastcgi_pass 127.0.0.1:9000;
+            fastcgi_split_path_info ^(.+\.php)(/.+)$;
+             //Add bellow line
+            fastcgi_read_timeout 3600;
+        }
+}
+
+
+Add this line in your php code
+ini_set('max_execution_time', '0');
+
+
+In php.ini
+
+upload_max_filesize = 400M;
+post_max_size = 1000M;
