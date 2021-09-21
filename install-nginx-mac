@@ -8,6 +8,7 @@ Config:       /usr/local/etc/nginx/nginx.conf
 Servers info: /usr/local/etc/nginx/servers/
 Docroot:      /usr/local/var/www
 Port:         8080
+Log /usr/local/Cellar/nginx/1.21.1/logs
 
 Add it to the Launch Agents to be started when starting up the system:
 
