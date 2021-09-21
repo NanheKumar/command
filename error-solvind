@@ -8,3 +8,9 @@ ps -ef | grep nginx
 
 Then kill all process like
 
+
+Link Unlink PHP in mac
+
+brew unlink php
+brew link --overwrite --force php@7.4
+
