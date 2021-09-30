@@ -1,0 +1,6 @@
+sudo find blog -type d -exec chmod 755 {} \;
+sudo find blog -type f -exec chmod 644 {} \;
+
+
+sudo chown nanhe_kumar:nanhe_kumar -R *
+sudo chown www-data:www-data wp-content
