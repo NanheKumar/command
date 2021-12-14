@@ -143,6 +143,6 @@ http {
     include servers/*;
 }
 
-brew servies stop nginx
-brew servies start nginx
+brew services stop nginx
+brew services start nginx
 
