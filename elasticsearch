@@ -188,4 +188,10 @@ Aggregations
 
 
 
+View All Index
 
+`http://127.0.0.1:9200/_cat/indices?h=index`
+
+View All Data of Index
+
+`http://127.0.0.1:9200/nutraj/_search?pretty=true` (nutraj is index name)
