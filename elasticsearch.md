@@ -45,11 +45,11 @@ Start two more instances of Elasticsearch
 
 2. Index Document
 
-curl -X PUT "localhost:9200/customer/_doc/1?pretty" -H 'Content-Type: application/json' -d'
+`curl -X PUT "localhost:9200/customer/_doc/1?pretty" -H 'Content-Type: application/json' -d'
 {
   "name": "John Doe"
 }
-'
+'`
 3. Get Dcoument
 
 curl -X GET "localhost:9200/customer/_doc/1?pretty"
