@@ -41,7 +41,7 @@ Start two more instances of Elasticsearch
 ./elasticsearch -Epath.data=data3 -Epath.logs=log3
 
 1. Health check
-http://127.0.0.1:9200/_cat/health?v
+`http://127.0.0.1:9200/_cat/health?v`
 
 2. Index Document
 
