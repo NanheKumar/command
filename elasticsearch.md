@@ -195,3 +195,5 @@ View All Index
 View All Data of Index
 
 `http://127.0.0.1:9200/nutraj/_search?pretty=true` (nutraj is index name)
+
+brew services start elastic/tap/elasticsearch-full
