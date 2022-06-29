@@ -1,3 +1,7 @@
+#Start nginx in mac
+sudo nginx -s stop && sudo nginx
+
+
 sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
 
@@ -28,4 +32,4 @@ sudo systemctl reload nginx.service
 Restart redis on ubunutu
 /etc/init.d/redis-server restart
 
-sudo nginx -s stop && sudo nginx
+
