@@ -33,3 +33,22 @@ Restart redis on ubunutu
 /etc/init.d/redis-server restart
 
 
+sudo apt update
+sudo apt install redis-server
+
+sudo systemctl enable redis-server
+sudo vim /etc/redis/redis.conf
+
+maxmemory 256mb
+maxmemory-policy allkeys-lru
+
+sudo systemctl restart redis-server
+sudo apt install php-redis
+
+The installer will automatically enable redis extension for all the pre installed PHP versions. If you installer new PHP version after this, you can use below command to enable redis module. For example to enable extension for PHP 7.4, type:
+
+sudo phpenmod -v 7.4 -s ALL redis
+
+
+I have not run above command for fresh instllation php -v 
+PHP 8.1.2 (cli) (built: Aug  8 2022 07:28:23) (NTS)
