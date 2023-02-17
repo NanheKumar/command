@@ -320,3 +320,7 @@ kubectl describe order kartify-chahak-tls-cert-issuer1-2068363811-1909097558
 
 kubectl get challenges
 
+## Download deployment file in yaml
+
+kubectl get deployment redis-ha-1-haproxy  -o yaml > redis-ha-1-haproxy.yaml
+
