@@ -58,9 +58,10 @@ ps -aux
 
 id www-data
 
+# Creat containe through image
+docker run -d --name priti-philips docker-bbw:latest  (latest is tag name)
 
-
-
+docker run -d --name priti-philips kartify-kcs
 
 
 docker images | grep php
